@@ -1,5 +1,6 @@
 package fr.declaration.variable;
 
+
 public class DeclarationApp {
 	public static void main(String[] args) {
 		byte b = 10;
@@ -14,8 +15,9 @@ public class DeclarationApp {
 		System.out.println(s);
 
 		String randomString = "Voici le résultat d’un calcul :\n1+5=6";
-
-		System.out.println(randomString);
+		double v = 057;
+		System.out.println(v);
+		
 
 	}
 }
