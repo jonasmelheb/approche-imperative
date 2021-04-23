@@ -6,10 +6,10 @@ public class InteractifTantQue {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int number;
-        System.out.println("Enter un nombre: ");
+        System.out.print("Enter un nombre: ");
         number = scan.nextInt();
         do {
-            System.out.println("Recommencez: ");
+            System.out.print("Recommencez: ");
             number = scan.nextInt();
         } while ((number < 1) || (number > 10));
         System.out.println("Le nombre est: " + number);
