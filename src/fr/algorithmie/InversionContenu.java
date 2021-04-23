@@ -14,15 +14,22 @@ public class InversionContenu {
          }
 		
 		int[] arrayCopy = new int[array.length];
-	     
-		System.out.println("\n\nRéponse 2:");
+
 		
-		// Copie le tableau en inverse dans un autre tableau et l'afficher
-        for (int i = arrayCopy.length - 1; i >= 0; i--) {
-        	arrayCopy[i] = array[i];
-        	int numberListNewArray = arrayCopy[i];
-        	System.out.print(numberListNewArray + ", ");
+		// Copie le tableau en inverse dans un autre tableau
+		int newIndex = arrayCopy.length - 1;
+        for (int i = 0; i < array.length; i++) {
+        	arrayCopy[newIndex] = array[i];
+        	newIndex--;
          }
+
+		System.out.println("\n\nRéponse 2:");
+
+        // Afficher le tableau
+		for (int i = 0; i < arrayCopy.length; i++) {
+			int numberListNewArray = arrayCopy[i];
+			System.out.print(numberListNewArray + ", ");
+		}
 
 	}
 }
